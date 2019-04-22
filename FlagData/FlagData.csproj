@@ -54,5 +54,26 @@
   <ItemGroup>
     <EmbeddedResource Include="Data\countries.csv" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\bikini-atoll.png" />
+    <EmbeddedResource Include="Images\denmark.png" />
+    <EmbeddedResource Include="Images\germany.png" />
+    <EmbeddedResource Include="Images\indonesia.png" />
+    <EmbeddedResource Include="Images\mozambique.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\sm-australia.png" />
+    <EmbeddedResource Include="Images\sm-bhutan.png" />
+    <EmbeddedResource Include="Images\sm-bikini-atoll.png" />
+    <EmbeddedResource Include="Images\sm-brazil.png" />
+    <EmbeddedResource Include="Images\sm-canada.png" />
+    <EmbeddedResource Include="Images\sm-denmark.png" />
+    <EmbeddedResource Include="Images\sm-germany.png" />
+    <EmbeddedResource Include="Images\sm-greece.png" />
+    <EmbeddedResource Include="Images\sm-indonesia.png" />
+    <EmbeddedResource Include="Images\sm-mozambique.png" />
+    <EmbeddedResource Include="Images\sm-nepal.png" />
+    <EmbeddedResource Include="Images\sm-usa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>

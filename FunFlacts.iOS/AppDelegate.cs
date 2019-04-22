@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
+﻿using Foundation;
 using UIKit;
 
 namespace FunFlacts.iOS
@@ -22,6 +18,10 @@ namespace FunFlacts.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(0x21,0x96,0xF3);
+            UINavigationBar.Appearance.TintColor = UIColor.White;
+            UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes { TextColor = UIColor.White });
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

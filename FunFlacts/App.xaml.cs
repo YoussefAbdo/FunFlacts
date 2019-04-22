@@ -1,6 +1,5 @@
-﻿using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration;
-using Xamarin.Forms.PlatformConfiguration.WindowsSpecific;
+﻿using FlagData;
+using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,12 +10,10 @@ namespace FunFlacts
     {
         public App()
         {
+            DependencyService.Register<FunFlactsViewModel>();
+
             InitializeComponent();
-            var np = new NavigationPage(new MainPage());
-
-            np.On<Windows>().SetToolbarPlacement(ToolbarPlacement.Bottom);
-
-            MainPage = np;
+            MainPage = new NavigationPage(new AllFlags());
         }
 
         protected override void OnStart()

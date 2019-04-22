@@ -14,7 +14,7 @@ namespace FlagData
         private bool _includesShield;
         private string _description;
         private Uri _moreInformationUrl;
-        private string _imageUrl;
+        private string _imageUrl, _smallImageUrl;
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -34,6 +34,15 @@ namespace FlagData
         {
             get { return _imageUrl; }
             set { ChangePropertyValue(ref _imageUrl, value); }
+        }
+
+        /// <summary>
+        /// This returns the "small" form of the image.
+        /// </summary>
+        public string SmallImageUrl
+        {
+            get { return _smallImageUrl; }
+            set { ChangePropertyValue(ref _smallImageUrl, value); }
         }
 
         /// <summary>
@@ -109,6 +118,15 @@ namespace FlagData
         private void RaisePropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        /// <summary>
+        /// ToString implementation.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return Country;
         }
     }
 }

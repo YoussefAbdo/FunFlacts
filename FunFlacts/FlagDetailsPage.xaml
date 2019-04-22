@@ -3,26 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FunFlacts"
              xmlns:eff="clr-namespace:FunFlacts.Effects"
-             xmlns:cvt="clr-namespace:FunFlacts.Converters"
-             xmlns:data="clr-namespace:FlagData;assembly=FlagData"
-             x:Class="FunFlacts.MainPage"
-             Title="Fun with Flags">
+             x:Class="FunFlacts.FlagDetailsPage"
+             Title="Flags">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Previous"
-                     Clicked="OnPrevious" Icon="ic_arrow_drop_up_black.png" />
+                     Clicked="OnPrevious" Icon="ic_arrow_drop_up.png" />
         <ToolbarItem Text="Next" 
-                     Clicked="OnNext" Icon="ic_arrow_drop_down_black.png" />
+                     Clicked="OnNext" Icon="ic_arrow_drop_down.png" />
         <ToolbarItem Text="Show" 
                      Clicked="OnShow" Icon="ic_action_search.png" />
     </ContentPage.ToolbarItems>
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <cvt:EmbeddedImageConverter x:Key="irConverter" 
-                    ResolvingAssemblyType="{x:Type data:Flag}" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
 
     <ScrollView>
         <StackLayout Spacing="10">

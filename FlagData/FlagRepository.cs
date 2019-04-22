@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -58,14 +59,15 @@ namespace FlagData
                 .Select(f =>
                    new Flag {
                        Country = f.Attribute("country").Value,
-                       ImageUrl = "FlagData." + f.Attribute("imageUrl").Value,
+                       ImageUrl = "FlagData.Images." + f.Attribute("imageUrl").Value,
+                       SmallImageUrl = "FlagData.Images.sm-" + f.Attribute("imageUrl").Value,
                        DateAdopted = (DateTime)f.Attribute("adopted"),
                        IncludesShield = (bool)f.Attribute("hasShield"),
                        MoreInformationUrl = new Uri(f.Attribute("url").Value),
                        Description = f.Value.Trim()
                    });
 
-            Flags = new List<Flag>(flags);
+            Flags = new ObservableCollection<Flag>(flags.OrderBy(f => f.Country));
 
             // Read the countries in.
             Countries = new List<string>();

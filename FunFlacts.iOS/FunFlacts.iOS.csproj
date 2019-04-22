@@ -155,22 +155,40 @@
     <BundleResource Include="Resources\ic_action_search%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_up_black.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_up.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_down_black.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_down.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_up_black%402x.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_up2x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_down_black%402x.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_down%402x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_down_black%403x.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_down%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ic_arrow_drop_up_black%403x.png" />
+    <BundleResource Include="Resources\ic_arrow_drop_up%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_edit%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_edit%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_cancel%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_cancel%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
